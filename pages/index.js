@@ -1,27 +1,12 @@
-import { createTheme ,ThemeProvider } from '@mui/material/styles';
-import Layout from "../components/Layout";
+import React from 'react'
+import Layout from '../modules/pageLayout'
 
-const theme = createTheme({
-  palette: {
-    type: "light",
-    primary: {
-      main: "#483185",
-    },
-    secondary: {
-      main: "#f50057",
-    },
-    text: {
-      primary: "#040404",
-    },
-  },
-});
-
-export default function Home() {
+function index() {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <Layout />
-      </ThemeProvider>
+      <Layout />
     </>
-  );
+  )
 }
+
+export default index

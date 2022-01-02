@@ -1,16 +1,30 @@
-html,
-body {
-  padding: 0;
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: rgb(36, 35, 34);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin-top: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.header, .footer{
+  background-color: antiquewhite;
+  height: 50px;
+  color: rgb(39, 38, 38);
 }
 
-* {
-  box-sizing: border-box;
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.drawer {
+  background-color: aqua;
+  width: 240px;
+}
+
+.main {
+  flex: 1;
+  background-color: burlywood;
 }
